@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9DBDFF;
+    display: flex;
+}
+
+#container {
+    margin: auto;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+#pai {
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.342);
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+#imgbasica {
+    width: 100%;
+    
+    border-radius: 10px 0 0 10px;
+}
+
+#centerimg {
+    display: flex;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(214, 247, 255, 0.712);
+    width: 80%;
+}
+
+#dados {
+    width: 100%;
+    height: 100%;
+
+    padding: 2vw;
+}
+
+#subcriarconta {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    font: 700 14px arial;
+}
+
+#botaocriarconta {
+    padding: 2vh 4vh;
+
+    font: 600 12px arial;
+    border-radius: 50px;
+    background-color: white;
+    border:solid 2px #9DBDFF;
+    color: #9DBDFF;
+}
+
+#txtcriarconta {
+    padding-right: 1vw;
+    color: rgba(128, 128, 128, 0.63);
+}
+
+h1 {
+    color: rgb(63, 63, 63);
+    font: 700 30px arial;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+#informacoes {
+    color: rgb(63, 63, 63);
+    font: 700 16px arial;
+}
+
+input {
+    width: 100%;
+    height: 5vh;
+    font: normal 18px arial;
+
+    border: solid 2px gray;
+    border-radius: 5px;
+}
+
+#email {
+    margin-bottom: 4vh;
+}
+
+#subesqueceu {
+    display: flex;
+    justify-content: end;
+
+    margin-top: 1vh;
+    font: 700 14px arial;
+    color: rgba(63, 63, 63, 0.582);
+}
+
+#fgtpass {
+    font: 700 14px arial;
+    color: rgba(63, 63, 63, 0.582);
+}
+
+#sublogin {
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    padding: 2vh 4vh;
+    font: normal 14px arial;
+
+    margin-right: 4vw;
+    border-radius: 50px;
+    background-color: #4684ff;
+    border: #4684ff;
+    color: white;
+}
+
+#remember {
+    width: 1vw;
+    margin-right: 1vw;
+}
+
+#txtremember {
+    font: 700 14px arial;
+    color: rgba(63, 63, 63, 0.582);
+}
+
+@media (max-width: 1030px) {
+    #container {
+        width: 90vw;
+    }
+
+    #remember {
+        width: 2vw;
+    }
+  }
+
+  @media (max-width: 425px) {
+    #container {
+        width: 100vw;
+    }
+
+    #remember {
+        width: 2vw;
+    }
+  }

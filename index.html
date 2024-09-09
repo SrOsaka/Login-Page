@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="pai">
+            <div id="centerimg">
+                <img id="imgbasica" src="imgbasica.png" alt="Mulher olhando documentos">
+            </div>
+            
+            <div id="dados">
+                <div id="subcriarconta">
+                    <p id="txtcriarconta">Don't have a accont?</p>
+                    <button onmouseenter="verificar()" onmouseleave="fora()" id="botaocriarconta">Sing up</button>
+
+                </div>
+                <h1>Login</h1>
+                <div id="informacoes">
+                    <p>Email</p>
+                    <input id="email" type="text">
+                    <p>Password</p>
+                    <input type="password">
+
+                </div>
+                <div id="subesqueceu">
+                    <a id="fgtpass" onmouseleave="fgtpassfora()" onmouseenter="fgtpassanimation()" href="">Forgot password?</a>
+
+                </div>
+                <div id="sublogin">
+                    <button id="login">Log in</button>
+                    <input type="radio" name="remember" id="remember">
+                    <p id="txtremember">Remember me</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var botaocriarconta = document.getElementById('botaocriarconta')
+        var fgtpass = document.getElementById('fgtpass')
+        function verificar() {
+            botaocriarconta.style.backgroundColor = '#4684ff'
+            botaocriarconta.style.color = 'white'
+            botaocriarconta.style.border = 'solid 2px #4684ff'
+    }
+        function fora() {
+            botaocriarconta.style.backgroundColor = 'white'
+            botaocriarconta.style.color = '#9DBDFF'
+            botaocriarconta.style.border = 'solid 2px #9DBDFF'
+    }
+        function fgtpassanimation() {
+            fgtpass.style.color = '#4684ff'
+    }
+        function fgtpassfora() {
+            fgtpass.style.color = 'rgba(63, 63, 63, 0.582)'
+    }
+    </script>
+</body>
+</html>
