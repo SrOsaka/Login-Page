@@ -16,50 +16,48 @@
             <div id="dados">
                 <div id="subcriarconta">
                     <p id="txtcriarconta">Don't have a accont?</p>
-                    <button onmouseenter="verificar()" onmouseleave="fora()" id="botaocriarconta">Sing up</button>
+                    <button id="botaocriarconta">Sing up</button>
 
                 </div>
                 <h1>Login</h1>
                 <div id="informacoes">
                     <p>Email</p>
-                    <input id="email" type="text">
+                    <input id="email" placeholder="Digite seu Email" type="text">
                     <p>Password</p>
-                    <input type="password">
+                    <input id="password" placeholder="Digite sua senha" type="password">
 
                 </div>
                 <div id="subesqueceu">
-                    <a id="fgtpass" onmouseleave="fgtpassfora()" onmouseenter="fgtpassanimation()" href="">Forgot password?</a>
+                    <img onclick="verificar()" id="versenha" src="eye.svg">
+                    <div id="alinhamentofgt">
+                        <a id="fgtpass" onclick="fgtpassanimation()" href="">Forgot password?</a>
+                    </div>
 
                 </div>
                 <div id="sublogin">
                     <button id="login">Log in</button>
                     <input type="radio" name="remember" id="remember">
                     <p id="txtremember">Remember me</p>
-
                 </div>
-
             </div>
         </div>
     </div>
     <script>
-        var botaocriarconta = document.getElementById('botaocriarconta')
         var fgtpass = document.getElementById('fgtpass')
-        function verificar() {
-            botaocriarconta.style.backgroundColor = '#4684ff'
-            botaocriarconta.style.color = 'white'
-            botaocriarconta.style.border = 'solid 2px #4684ff'
-    }
-        function fora() {
-            botaocriarconta.style.backgroundColor = 'white'
-            botaocriarconta.style.color = '#9DBDFF'
-            botaocriarconta.style.border = 'solid 2px #9DBDFF'
-    }
+
         function fgtpassanimation() {
             fgtpass.style.color = '#4684ff'
     }
-        function fgtpassfora() {
-            fgtpass.style.color = 'rgba(63, 63, 63, 0.582)'
-    }
+        function verificar() {
+            if (document.getElementById('password').type == 'password'){
+                document.getElementById('versenha').src = 'eye-off.svg'
+                document.getElementById('password').type = 'text'
+            } else {
+                document.getElementById('versenha').src = 'eye.svg'
+                document.getElementById('password').type = 'password'
+            }
+            
+        }
     </script>
 </body>
 </html>
